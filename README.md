@@ -14,25 +14,63 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
 <div align="center">
-        <pre>
-<span style="color: #00FFFF;">---------------------- hyc1005 ----------------------</span>
-
-<span style="color: #00FFFF;">- OS:</span>                             Windows
-<span style="color: #00FFFF;">- Uptime:</span>                  <!-- UPTIME_START -->1 years, 11 months, 12 days<!-- UPTIME_END -->
-<span style="color: #00FFFF;">- Host:</span>                           None
-<span style="color: #00FFFF;">- Kernel:</span>                         None
-<span style="color: #00FFFF;">- IDE:</span>                            VSCode
-
-<span style="color: #00FF00;">- Languages.Programming:</span>          Rust, Python
-<span style="color: #00FF00;">- Languages.Computer:</span>             What's this line for
-<span style="color: #00FF00;">- Languages.Real:</span>                 Chinese, English
-
-<span style="color: #00FF00;">- Hobbies.Software:</span>               Heartstone
-
-<span style="color: #00FFFF;">---------------------- contact ----------------------</span>
-
-<span style="color: #00FFFF;">- Email.Work:</span>                     gshyc2026@outlook.com
-        </pre>
+  <div style="display: inline-block; text-align: left; font-family: 'Courier New', Courier, monospace; background-color: #1e1e1e; border: 1px solid #444; border-radius: 12px; padding: 25px; box-shadow: 5px 5px 15px rgba(0,0,0,0.3); color: #ffffff; line-height: 1.6;">
+    <div style="text-align: center; color: #00FFFF; margin-bottom: 15px; font-weight: bold;">
+      ---------------------- INTRO ----------------------
+    </div>
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td style="color: #00FFFF; padding-right: 30px; white-space: nowrap;">- OS:</td>
+        <td>Windows</td>
+      </tr>
+      <tr>
+        <td style="color: #00FFFF; padding-right: 30px; white-space: nowrap;">- Uptime:</td>
+        <td><!-- UPTIME_START -->1 years, 11 months, 12 days<!-- UPTIME_END --></td>
+      </tr>
+      <tr>
+        <td style="color: #00FFFF; padding-right: 30px; white-space: nowrap;">- Host:</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td style="color: #00FFFF; padding-right: 30px; white-space: nowrap;">- Kernel:</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td style="color: #00FFFF; padding-right: 30px; white-space: nowrap;">- IDE:</td>
+        <td>VSCode</td>
+      </tr>
+    </table>
+    <div style="height: 10px;"></div>
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td style="color: #00FF00; padding-right: 30px; white-space: nowrap;">- Languages.Programming:</td>
+        <td>Rust, Python</td>
+      </tr>
+      <tr>
+        <td style="color: #00FF00; padding-right: 30px; white-space: nowrap;">- Languages.Real:</td>
+        <td>Chinese, English</td>
+      </tr>
+    </table>
+    <div style="height: 10px;"></div>
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td style="color: #00FF00; padding-right: 30px; white-space: nowrap;">- Hobbies.Software:</td>
+        <td>Heartstone</td>
+      </tr>
+    </table>
+    <div style="height: 10px;"></div>
+    <div style="text-align: center; color: #00FFFF; margin: 15px 0; font-weight: bold;">
+      ---------------------- CONTACT ----------------------
+    </div>
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td style="color: #00FFFF; padding-right: 30px; white-space: nowrap;">- Email.Work:</td>
+        <td>gshyc2026@outlook.com</td>
+      </tr>
+    </table>
+  </div>
+        <p style="font-size: 12px; color: #888; margin-top: 20px; text-align: center;">
+  refered to <a href="https://github.com/AndrewGrant" style="color: #00FFFF; text-decoration: none;">Andrew</a>
+</p>
 </div>
