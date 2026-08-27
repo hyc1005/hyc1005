@@ -22,11 +22,11 @@ Here are some ideas to get you started:
         <pre>
 <span style="color: #00FFFF;">---------------------- hyc1005 ----------------------</span>
 
-<span style="color: #00FFFF;">- OS:</span>                         Windows
-<span style="color: #00FFFF;">- Uptime:</span>                    <!-- UPTIME_START -->0 years, 0 months, 0 days<!-- UPTIME_END -->
-<span style="color: #00FFFF;">- Host:</span>                       None
-<span style="color: #00FFFF;">- Kernel:</span>                     None
-<span style="color: #00FFFF;">- IDE:</span>                        VSCode
+<span style="color: #00FFFF;">- OS:</span>                             Windows
+<span style="color: #00FFFF;">- Uptime:</span>                        <!-- UPTIME_START -->0 years, 0 months, 0 days<!-- UPTIME_END -->
+<span style="color: #00FFFF;">- Host:</span>                           None
+<span style="color: #00FFFF;">- Kernel:</span>                         None
+<span style="color: #00FFFF;">- IDE:</span>                            VSCode
 
 <span style="color: #00FF00;">- Languages.Programming:</span>          Rust, Python
 <span style="color: #00FF00;">- Languages.Computer:</span>             What's this line for
