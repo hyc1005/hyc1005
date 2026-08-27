@@ -21,8 +21,8 @@ Here are some ideas to get you started:
         <!-- 这里是右侧个人介绍 -->
         <pre>
 -------------hyc1005-------------
-<span style="color: #00FFFF;">- OS:</span>                 Windows 10
-<span style="color: #00FFFF;">- Uptime:</span>       <!-- UPTIME_TEXT -->
+<span style="color: #00FFFF;">- OS:</span>                 Windows
+<span style="color: #00FFFF;">- Uptime:</span>   <!-- UPTIME_TEXT -->
 <span style="color: #00FFFF;">- Host:</span>               None
 <span style="color: #00FFFF;">- Kernel:</span>             None
 <span style="color: #00FFFF;">- IDE:</span>                VSCode
