@@ -1,0 +1,59 @@
+name: Update Uptime
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天凌晨0点运行一次
+  workflow_dispatch:      # 允许你手动在 Actions 页面点击运行
+
+jobs:
+  update-uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Python script
+        run: |
+          python - << 'EOF'
+          import re
+          from datetime import datetime
+
+          # 你的开始时间
+          start_date = datetime(2024, 9, 15)
+          now = datetime.now()
+          
+          # 计算年月日
+          years = now.year - start_date.year
+          months = now.month - start_date.month
+          days = now.day - start_date.day
+          
+          if days < 0:
+              months -= 1
+              # 粗略计算上个月的天数
+              prev_month = start_date.replace(day=28) + timedelta(days=4)
+              days += (prev_month - timedelta(days=prev_month.day)).day
+          if months < 0:
+              years -= 1
+              months += 12
+              
+          uptime_text = f"{years} years, {months} months, {days} days"
+
+          # 读取 README.md
+          with open('README.md', 'r', encoding='utf-8') as file:
+              content = file.read()
+          
+          # 替换占位符
+          new_content = re.sub(r'<!-- UPTIME_TEXT -->', uptime_text, content)
+          
+          # 写回 README.md
+          with open('README.md', 'w', encoding='utf-8') as file:
+              file.write(new_content)
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update uptime: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
