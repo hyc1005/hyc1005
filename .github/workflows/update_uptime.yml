@@ -8,6 +8,8 @@ on:
 jobs:
   update-uptime:
     runs-on: ubuntu-latest
+    permissions:          # 新增这两行
+      contents: write     # 赋予写权限
     steps:
       - name: Checkout code
         uses: actions/checkout@v6 # 这里已经从 v4 更新到 v6 了
