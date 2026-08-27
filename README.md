@@ -16,8 +16,13 @@ Here are some ideas to get you started:
 -->
 
 <div align="center">
-  <pre>
+  <table>
+    <tr>
+      <td>
+        <!-- 这里是左侧，把之前保存的ASCII字符画粘贴在下面 -->
+        <pre>
 
+                                                                                                    
                                        .-=+***+***++*+++=:..:.                                      
                                    .:-+#@@@@@@@@@@@@@@@@@@%##*-:                                    
                                  .-*%@@@@@@@@@@@@@@@@@@@@@@@@@%%*-.                                 
@@ -71,9 +76,28 @@ Here are some ideas to get you started:
           ..................:++======------------------------------------+-.............            
      ...............:........-+======------------------------------------+=................         
 ....................:.........-+==---------------------------------------=-...................      
-.....................:.........====--------------------------------------=.......................   
-....................:::.........-==--------------------------------------:......................... 
-....................:::..........:------------------------:-------------............................
-....................:.::....:......:---------------------------------=:.............................
-  </pre>
+        </pre>
+      </td>
+      <td>
+        <!-- 这里是右侧个人介绍 -->
+        <pre>
+-------------hyc1005-------------
+<span style="color: #00FFFF;">- OS:</span>                 Windows 10
+<span style="color: #00FFFF;">- Uptime:</span> <!-- UPTIME_TEXT -->
+<span style="color: #00FFFF;">- Host:</span>               None
+<span style="color: #00FFFF;">- Kernel:</span>             None
+<span style="color: #00FFFF;">- IDE:</span>                VSCode
+
+<span style="color: #00FF00;">- Languages.Programming:</span>  Rust, Python
+<span style="color: #00FF00;">- Languages.Computer:</span>     What's this line for
+<span style="color: #00FF00;">- Languages.Real:</span>  Chinese, English
+
+<span style="color: #00FF00;">- Hobbies.Software:</span>  Heartstone
+
+-------------contact-------------
+<span style="color: #00FFFF;">- Email.Work:</span>     gshyc2026@outlook.com
+</pre>
+      </td>
+    </tr>
+  </table>
 </div>
