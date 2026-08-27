@@ -2,17 +2,17 @@ name: Update Uptime
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天凌晨0点运行一次
-  workflow_dispatch:      # 允许你手动在 Actions 页面点击运行
+    - cron: '0 0 * * *' # 每天凌晨0点运行
+  workflow_dispatch: # 允许手动点击运行
 
 jobs:
   update-uptime:
     runs-on: ubuntu-latest
-    permissions:          # 新增这两行
-      contents: write     # 赋予写权限
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6 # 这里已经从 v4 更新到 v6 了
+        uses: actions/checkout@v6
 
       - name: Run Python script
         run: |
@@ -31,9 +31,7 @@ jobs:
           
           if days < 0:
               months -= 1
-              # 粗略计算上个月的天数
-              prev_month = start_date.replace(day=28) + timedelta(days=4)
-              days += (prev_month - timedelta(days=prev_month.day)).day
+              days += 30
           if months < 0:
               years -= 1
               months += 12
@@ -44,8 +42,17 @@ jobs:
           with open('README.md', 'r', encoding='utf-8') as file:
               content = file.read()
           
-          # 替换占位符
-          new_content = re.sub(r'<!-- UPTIME_TEXT -->', uptime_text, content)
+          # 核心修改：使用正则表达式，只替换 START 和 END 注释之间的内容，保留占位符本身
+          # r'\1' 和 r'\3' 保留前后的注释，\2 是中间被替换掉的旧文本
+          new_content, count = re.subn(
+              r'(<!-- UPTIME_START -->).*?(<!-- UPTIME_END -->)', 
+              lambda m: m.group(1) + uptime_text + m.group(2), 
+              content, 
+              flags=re.DOTALL
+          )
+          
+          if count == 0:
+              print("警告：未找到 UPTIME_START 占位符，请检查 README.md 是否写对了！")
           
           # 写回 README.md
           with open('README.md', 'w', encoding='utf-8') as file:
