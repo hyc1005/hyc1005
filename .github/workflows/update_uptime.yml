@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6 # 这里已经从 v4 更新到 v6 了
 
       - name: Run Python script
         run: |
