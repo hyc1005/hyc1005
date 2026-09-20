@@ -27,7 +27,7 @@ Here are some ideas to get you started:
       </tr>
       <tr>
         <td style="color: #00FFFF; width: 45%; padding-right: 10px; white-space: nowrap;">- Uptime:</td>
-        <td style="width: 55%; padding-left: 20px;"><!-- UPTIME_START -->2 years, 0 months, 4 days<!-- UPTIME_END --></td>
+        <td style="width: 55%; padding-left: 20px;"><!-- UPTIME_START -->2 years, 0 months, 5 days<!-- UPTIME_END --></td>
       </tr>
       <tr>
         <td style="color: #00FFFF; width: 45%; padding-right: 10px; white-space: nowrap;">- Host:</td>
